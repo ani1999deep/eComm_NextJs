@@ -10,7 +10,7 @@ const Page: React.FC = () => {
 
   useEffect(() => {
     getFilteredData(query.toString());
-  }, []);
+  }, [query, getFilteredData]);
 
   return (
     <div>
